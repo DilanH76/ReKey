@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ ul, ol {
+    list-style: none; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --bg-dark: #06101E;       
+    --bg-footer: #020912;     
+    --cyan: #D2F2F8;          
+    --rose: #FFA5DC;          
+    --text-white: #ffffff;
+    --nav-bg: rgba(6, 16, 30, 0.7);
+    --blur-effect: blur(10px);
+    --radius: 16px;
+    --container-width: 1200px;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--nav-bg);
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+
+}
+
+.platform-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-weight: 600; 
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--rose);
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.search-btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.search-btn-round:hover {
+    transform: scale(1.1);
+}
+
+.search-btn-round img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+.user-nav {
+    display: flex;
+    gap: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.user-nav img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.user-nav a:hover img {
+    transform: scale(1.2);
+}
