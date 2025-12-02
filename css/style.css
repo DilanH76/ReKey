@@ -1,4 +1,4 @@
-/* RESET & BASES */
+/* RESET ET BASES */
 
 * {
   box-sizing: border-box;
@@ -33,7 +33,7 @@ img {
   --rose: #ffa5dc;
   --text-white: #ffffff;
 
-  /* Effets & Dimensions */
+  /* Effets et Dimensions */
 
   --nav-bg: rgba(6, 16, 30, 0.7);
   --blur-effect: blur(10px);
@@ -375,7 +375,7 @@ section h2 a:hover .link-arrow {
   transform: scale(1.1) translateX(-5px) translateY(-10px);
 }
 
-/*ACTUALITÉS*/
+/*ACTUALITES*/
 
 .news-list {
   display: flex;
@@ -664,7 +664,7 @@ footer {
     height: 11rem;
   }
 
-  /*ACTUALITÉS*/
+  /*ACTUALITES*/
 
   .news-item a {
     flex-direction: column;
