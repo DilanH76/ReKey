@@ -550,7 +550,13 @@ footer {
 /*RESPONSIVE*/
 
 @media (max-width: 768px) {
-  
+
+
+  section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+    }
   /*HEADER*/
 
   header {
@@ -617,6 +623,9 @@ footer {
   /*HERO*/
 
   .hero {
+    background-position: center top;
+    background-size: auto 100%;
+    background-position: 40% top;
     padding-top: 10rem;
     padding-bottom: 2rem;
     min-height: auto;
