@@ -1,0 +1,109 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ReKey</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
+      </a>
+      <div class="nav-center-capsule">
+      <nav class="platform-nav">
+        <a href="#" class="nav-link">
+          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
+          <span>PC</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
+          <span>PlayStation</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
+          <span>Xbox</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
+          <span>Nintendo</span>
+        </a>
+        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+          <img src="assets/icons/search.svg" alt="Rechercher" />
+        </button>
+      </nav>
+      </div>
+
+      <nav class="user-nav">
+        <a href="#" aria-label="Mon Panier">
+          <img src="assets/icons/cart.svg" alt="Panier" />
+        </a>
+        <a href="#" aria-label="Mon Compte">
+          <img src="assets/icons/user.svg" alt="Profil" />
+        </a>
+      </nav>
+    </header>
+    <main>
+        <section class="auth-container">
+        <div class="auth-card">
+            <h2>Bon retour parmi nous !</h2>
+            <p class="auth-subtitle">Connecte-toi pour découvrire de nouvelles offres.</p>
+            
+            <form action="#" method="POST" class="auth-form">
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <a href="#" class="forgot-pass">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit" class="btn-neon btn-full">Se connecter</button>
+
+            </form>
+
+            <div class="auth-footer">
+                <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+      <div class="footer-content container">
+        <div class="footer-social">
+          <p>rejoignez notre communauté</p>
+          <div class="social-icons">
+            <a href="#" aria-label="X">
+              <img src="assets/icons/x.svg" alt="X" />
+            </a>
+            <a href="#" aria-label="Discord">
+              <img src="assets/icons/discord.svg" alt="Discord" />
+            </a>
+            <a href="#" aria-label="Twitch">
+              <img src="assets/icons/twitch.svg" alt="Twitch" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

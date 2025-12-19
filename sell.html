@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ReKey</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
+      </a>
+      <div class="nav-center-capsule">
+      <nav class="platform-nav">
+        <a href="#" class="nav-link">
+          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
+          <span>PC</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
+          <span>PlayStation</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
+          <span>Xbox</span>
+        </a>
+        <a href="#" class="nav-link">
+          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
+          <span>Nintendo</span>
+        </a>
+        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+          <img src="assets/icons/search.svg" alt="Rechercher" />
+        </button>
+      </nav>
+      </div>
+
+      <nav class="user-nav">
+        <a href="#" aria-label="Mon Panier">
+          <img src="assets/icons/cart.svg" alt="Panier" />
+        </a>
+        <a href="#" aria-label="Mon Compte">
+          <img src="assets/icons/user.svg" alt="Profil" />
+        </a>
+      </nav>
+    </header>
+<main class="container">
+    
+    <section class="sell-section">
+        <div class="sell-header">
+            <h1>Vendre une clé</h1>
+            <p>Transforme tes jeux inutilisés en argent réel. Simple. Rapide. Sécurisé.</p>
+        </div>
+
+        <form action="#" method="POST" class="sell-form">
+            
+            <div class="form-block">
+                <h3><img src="assets/icons/monitor.svg" class="icon-title"> Informations du jeu</h3>
+                
+                <div class="form-group">
+                    <label for="title">Titre du jeu</label>
+                    <input type="text" id="title" name="title" placeholder="Ex: Elden Ring" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="platform">Plateforme</label>
+                        <select id="platform" name="platform">
+                            <option value="pc">PC (Steam/Epic)</option>
+                            <option value="ps">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="switch">Nintendo Switch</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Catégorie</label>
+                        <select id="category" name="category">
+                            <option value="action">Action</option>
+                            <option value="rpg">RPG</option>
+                            <option value="fps">FPS</option>
+                            <option value="sport">Sport</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description (État, Région...)</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Ex: Clé Steam jamais utilisée..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <h3><img src="assets/icons/search.svg" class="icon-title-s"> Visuel</h3>
+                
+                <div class="file-upload-wrapper">
+                    <input type="file" id="game-img" name="game-img" accept="image/*" class="file-input">
+                    <label for="game-img" class="file-label">
+                        <span class="upload-icon">📁</span>
+                        <span>Glisse une image ici ou clique pour parcourir</span>
+                        <small>Format JPG, PNG (Max 5Mo)</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-block security-block">
+                <h3>🔒 La Clé d'activation</h3>
+                <p class="security-note">Cette info sera masquée et envoyée uniquement à l'acheteur après paiement.</p>
+                
+                <div class="form-group">
+                    <input type="text" id="game-key" name="game-key" placeholder="XXXX-XXXX-XXXX-XXXX" class="secure-input" required>
+                </div>
+            </div>
+
+            <div class="form-block price-simulation">
+                <div class="form-group">
+                    <label for="price">Ton prix de vente (€)</label>
+                    <input type="number" id="price" name="price" placeholder="20" min="1" step="0.5" required>
+                </div>
+
+                <div class="earnings-display">
+                    <span>Commission ReKey (5%) : <strong style="color: #ff6b6b;">-1.00€</strong></span>
+                    <span class="total-gain">Tu recevras : <strong style="color: var(--cyan);">19.00€</strong></span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-neon btn-large btn-full">Mettre en vente</button>
+            </div>
+
+        </form>
+    </section>
+
+</main>
+    <footer>
+      <div class="footer-content container">
+        <div class="footer-social">
+          <p>rejoignez notre communauté</p>
+          <div class="social-icons">
+            <a href="#" aria-label="X">
+              <img src="assets/icons/x.svg" alt="X" />
+            </a>
+            <a href="#" aria-label="Discord">
+              <img src="assets/icons/discord.svg" alt="Discord" />
+            </a>
+            <a href="#" aria-label="Twitch">
+              <img src="assets/icons/twitch.svg" alt="Twitch" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>
