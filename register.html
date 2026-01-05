@@ -17,27 +17,43 @@
         <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
       </a>
       <div class="nav-center-capsule">
-      <nav class="platform-nav">
-        <a href="#" class="nav-link">
-          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
-          <span>PC</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
-          <span>PlayStation</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
-          <span>Xbox</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
-          <span>Nintendo</span>
-        </a>
-        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+        <nav class="platform-nav">
+          <a href="#" class="nav-link">
+            <img src="assets/icons/monitor.svg" class="nav-icon" />
+            <span>PC</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/playstation.svg" class="nav-icon" />
+            <span>PlayStation</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img src="assets/icons/xbox.svg" class="nav-icon" />
+            <span>Xbox</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/nintendo.svg" class="nav-icon" />
+            <span>Nintendo</span>
+          </a>
+        </nav>
+
+        <form class="search-form-expanded" action="#">
+          <input
+            type="text"
+            placeholder="Minecraft, RPG, Cyberpunk..."
+            id="search-input"
+          />
+
+          <span class="close-search">✕</span>
+        </form>
+
+        <button
+          class="search-btn-round"
+          aria-label="Ouvrir la recherche"
+          id="toggle-search"
+        >
           <img src="assets/icons/search.svg" alt="Rechercher" />
         </button>
-      </nav>
       </div>
 
       <nav class="user-nav">
@@ -50,50 +66,99 @@
       </nav>
     </header>
     <main>
-<section class="auth-container">
+      <section class="auth-container">
         <div class="auth-card">
-            <h2>Rejoins nous ! </h2>
-            <p class="auth-subtitle">Crée ton compte pour acheter et vendre.</p>
-            
-            <form action="#" method="POST" class="auth-form">
-                
-                <div class="form-group">
-                    <label for="username">Pseudo</label>
-                    <input type="text" id="username" name="username" placeholder="Gamer123" required>
-                </div>
+          <h2>Rejoins nous !</h2>
+          <p class="auth-subtitle">Crée ton compte pour acheter et vendre.</p>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="confirm-password">Confirmer le mot de passe</label>
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
-                </div>
-
-                <div class="form-group checkbox-group" style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="checkbox" id="cgu" name="cgu" required style="width: auto; margin: 0;">
-                    <label for="cgu" style="margin: 0; font-weight: 400; font-size: 0.85rem; color: #ccc;">
-                        J'accepte les <a href="#" style="color: var(--cyan); text-decoration: underline;">conditions d'utilisation</a>
-                    </label>
-                </div>
-
-                <button type="submit" class="btn-neon btn-full" style="margin-top: 1rem;">S'inscrire</button>
-
-            </form>
-
-            <div class="auth-footer">
-                <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+          <form action="#" method="POST" class="auth-form">
+            <div class="form-group">
+              <label for="username">Pseudo</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Gamer123"
+                required
+              />
             </div>
-        </div>
-    </section>
 
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemple@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirmer le mot de passe</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+
+            <div
+              class="form-group checkbox-group"
+              style="display: flex; align-items: center; gap: 0.5rem"
+            >
+              <input
+                type="checkbox"
+                id="cgu"
+                name="cgu"
+                required
+                style="width: auto; margin: 0"
+              />
+              <label
+                for="cgu"
+                style="
+                  margin: 0;
+                  font-weight: 400;
+                  font-size: 0.85rem;
+                  color: #ccc;
+                "
+              >
+                J'accepte les
+                <a
+                  href="#"
+                  style="color: var(--cyan); text-decoration: underline"
+                  >conditions d'utilisation</a
+                >
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-neon btn-full"
+              style="margin-top: 1rem"
+            >
+              S'inscrire
+            </button>
+          </form>
+
+          <div class="auth-footer">
+            <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content container">

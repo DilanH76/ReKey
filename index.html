@@ -18,27 +18,43 @@
         <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
       </a>
       <div class="nav-center-capsule">
-      <nav class="platform-nav">
-        <a href="#" class="nav-link">
-          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
-          <span>PC</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
-          <span>PlayStation</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
-          <span>Xbox</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
-          <span>Nintendo</span>
-        </a>
-        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+        <nav class="platform-nav">
+          <a href="#" class="nav-link">
+            <img src="assets/icons/monitor.svg" class="nav-icon" />
+            <span>PC</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/playstation.svg" class="nav-icon" />
+            <span>PlayStation</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img src="assets/icons/xbox.svg" class="nav-icon" />
+            <span>Xbox</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/nintendo.svg" class="nav-icon" />
+            <span>Nintendo</span>
+          </a>
+        </nav>
+
+        <form class="search-form-expanded" action="#">
+          <input
+            type="text"
+            placeholder="Minecraft, RPG, Cyberpunk..."
+            id="search-input"
+          />
+
+          <span class="close-search">✕</span>
+        </form>
+
+        <button
+          class="search-btn-round"
+          aria-label="Ouvrir la recherche"
+          id="toggle-search"
+        >
           <img src="assets/icons/search.svg" alt="Rechercher" />
         </button>
-      </nav>
       </div>
 
       <nav class="user-nav">

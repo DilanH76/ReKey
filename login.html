@@ -17,27 +17,43 @@
         <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
       </a>
       <div class="nav-center-capsule">
-      <nav class="platform-nav">
-        <a href="#" class="nav-link">
-          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
-          <span>PC</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
-          <span>PlayStation</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
-          <span>Xbox</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
-          <span>Nintendo</span>
-        </a>
-        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+        <nav class="platform-nav">
+          <a href="#" class="nav-link">
+            <img src="assets/icons/monitor.svg" class="nav-icon" />
+            <span>PC</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/playstation.svg" class="nav-icon" />
+            <span>PlayStation</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img src="assets/icons/xbox.svg" class="nav-icon" />
+            <span>Xbox</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/nintendo.svg" class="nav-icon" />
+            <span>Nintendo</span>
+          </a>
+        </nav>
+
+        <form class="search-form-expanded" action="#">
+          <input
+            type="text"
+            placeholder="Minecraft, RPG, Cyberpunk..."
+            id="search-input"
+          />
+
+          <span class="close-search">✕</span>
+        </form>
+
+        <button
+          class="search-btn-round"
+          aria-label="Ouvrir la recherche"
+          id="toggle-search"
+        >
           <img src="assets/icons/search.svg" alt="Rechercher" />
         </button>
-      </nav>
       </div>
 
       <nav class="user-nav">
@@ -50,37 +66,50 @@
       </nav>
     </header>
     <main>
-        <section class="auth-container">
+      <section class="auth-container">
         <div class="auth-card">
-            <h2>Bon retour parmi nous !</h2>
-            <p class="auth-subtitle">Connecte-toi pour découvrire de nouvelles offres.</p>
-            
-            <form action="#" method="POST" class="auth-form">
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
-                </div>
+          <h2>Bon retour parmi nous !</h2>
+          <p class="auth-subtitle">
+            Connecte-toi pour découvrire de nouvelles offres.
+          </p>
 
-                <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
-                </div>
-
-                <div class="form-options">
-                    <a href="#" class="forgot-pass">Mot de passe oublié ?</a>
-                </div>
-
-                <button type="submit" class="btn-neon btn-full">Se connecter</button>
-
-            </form>
-
-            <div class="auth-footer">
-                <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+          <form action="#" method="POST" class="auth-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemple@gmail.com"
+                required
+              />
             </div>
-        </div>
-    </section>
 
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+
+            <div class="form-options">
+              <a href="#" class="forgot-pass">Mot de passe oublié ?</a>
+            </div>
+
+            <button type="submit" class="btn-neon btn-full">
+              Se connecter
+            </button>
+          </form>
+
+          <div class="auth-footer">
+            <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content container">

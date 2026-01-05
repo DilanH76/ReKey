@@ -18,27 +18,43 @@
         <img src="assets/icons/Rekey2.webp" alt="Logo ReKey" />
       </a>
       <div class="nav-center-capsule">
-      <nav class="platform-nav">
-        <a href="#" class="nav-link">
-          <img src="assets/icons/monitor.svg" alt="" class="nav-icon" />
-          <span>PC</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/playstation.svg" alt="" class="nav-icon" />
-          <span>PlayStation</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/xbox.svg" alt="" class="nav-icon" />
-          <span>Xbox</span>
-        </a>
-        <a href="#" class="nav-link">
-          <img src="assets/icons/nintendo.svg" alt="" class="nav-icon" />
-          <span>Nintendo</span>
-        </a>
-        <button class="search-btn-round" aria-label="Ouvrir la recherche">
+        <nav class="platform-nav">
+          <a href="#" class="nav-link">
+            <img src="assets/icons/monitor.svg" class="nav-icon" />
+            <span>PC</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/playstation.svg" class="nav-icon" />
+            <span>PlayStation</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img src="assets/icons/xbox.svg" class="nav-icon" />
+            <span>Xbox</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="assets/icons/nintendo.svg" class="nav-icon" />
+            <span>Nintendo</span>
+          </a>
+        </nav>
+
+        <form class="search-form-expanded" action="#">
+          <input
+            type="text"
+            placeholder="Minecraft, RPG, Cyberpunk..."
+            id="search-input"
+          />
+
+          <span class="close-search">✕</span>
+        </form>
+
+        <button
+          class="search-btn-round"
+          aria-label="Ouvrir la recherche"
+          id="toggle-search"
+        >
           <img src="assets/icons/search.svg" alt="Rechercher" />
         </button>
-      </nav>
       </div>
 
       <nav class="user-nav">
@@ -51,80 +67,97 @@
       </nav>
     </header>
 
-<main class="container">
-    
-    <div class="breadcrumb">
-        <a href="index.html">Accueil</a> &gt; <a href="#">RPG</a> &gt; <span>Cyberpunk 2077</span>
-    </div>
+    <main class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt; <a href="#">RPG</a> &gt;
+        <span>Cyberpunk 2077</span>
+      </div>
 
-    <section class="product-top">
-        
+      <section class="product-top">
         <div class="product-visuals">
-            <img src="assets/img/cyberpunk-2077-xbox-one-xbox-series-x-s-game-microsoft-store-europe-cover.jpg" alt="Cyberpunk 2077 Cover" class="main-cover">
+          <img
+            src="assets/img/cyberpunk-2077-xbox-one-xbox-series-x-s-game-microsoft-store-europe-cover.jpg"
+            alt="Cyberpunk 2077 Cover"
+            class="main-cover"
+          />
         </div>
 
         <div class="product-summary">
-            <h1>Cyberpunk 2077</h1>
-            
-            <div class="product-meta">
-                <span class="platform-tag"><img src="assets/icons/monitor.svg" class="icon-small"> PC</span>
-                <span class="category-tag">RPG</span>
-            </div>
+          <h1>Cyberpunk 2077</h1>
 
-            <div class="seller-info">
-                <img src="assets/icons/user.svg" alt="Vendeur" class="seller-avatar">
-                <div>
-                    <p class="seller-name">Vendu par <strong>Sarah_Gamer</strong></p>
-                    <p class="seller-rating">⭐⭐⭐⭐☆ (42 ventes)</p>
-                </div>
-            </div>
+          <div class="product-meta">
+            <span class="platform-tag"
+              ><img src="assets/icons/monitor.svg" class="icon-small" />
+              PC</span
+            >
+            <span class="category-tag">RPG</span>
+          </div>
 
-            <div class="price-block">
-                <div class="price-comparison">
-                    <span class="label-store">Prix officiel :</span>
-                    <span class="old-price">59.99€</span>
-                </div>
-                <div class="price-final">
-                    <span class="current-price">29.99€</span>
-                    <span class="economy-badge">Économisez 30€</span>
-                </div>
+          <div class="seller-info">
+            <img
+              src="assets/icons/user.svg"
+              alt="Vendeur"
+              class="seller-avatar"
+            />
+            <div>
+              <p class="seller-name">Vendu par <strong>Sarah_Gamer</strong></p>
+              <p class="seller-rating">⭐⭐⭐⭐☆ (42 ventes)</p>
             </div>
+          </div>
 
-            <div class="action-buttons">
-                <button class="btn-neon btn-large">
-                    <img src="assets/icons/cart.svg" class="btn-icon"> Ajouter au panier
-                </button>
-                <button class="btn-outline">
-                    ❤ Liste de souhaits
-                </button>
+          <div class="price-block">
+            <div class="price-comparison">
+              <span class="label-store">Prix officiel :</span>
+              <span class="old-price">59.99€</span>
             </div>
+            <div class="price-final">
+              <span class="current-price">29.99€</span>
+              <span class="economy-badge">Économisez 30€</span>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="btn-neon btn-large">
+              <img src="assets/icons/cart.svg" class="btn-icon" /> Ajouter au
+              panier
+            </button>
+            <button class="btn-outline">❤ Liste de souhaits</button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="product-details-bottom">
+      <section class="product-details-bottom">
         <div class="description-box">
-            <h3>À propos du jeu</h3>
-            <p>
-                Cyberpunk 2077 est un jeu d’action-aventure en monde ouvert qui se déroule à Night City, 
-                une mégalopole obsédée par le pouvoir, la séduction et les modifications corporelles. 
-                Vous incarnez V, mercenaire hors-la-loi à la recherche d’un implant unique qui serait la clé de l’immortalité.
-                Personnalisez votre cybermatériel, vos compétences et votre style de jeu, et explorez cette ville immense où chacun de vos choix aura un impact direct sur l'histoire et le monde qui vous entoure.
-            </p>
+          <h3>À propos du jeu</h3>
+          <p>
+            Cyberpunk 2077 est un jeu d’action-aventure en monde ouvert qui se
+            déroule à Night City, une mégalopole obsédée par le pouvoir, la
+            séduction et les modifications corporelles. Vous incarnez V,
+            mercenaire hors-la-loi à la recherche d’un implant unique qui serait
+            la clé de l’immortalité. Personnalisez votre cybermatériel, vos
+            compétences et votre style de jeu, et explorez cette ville immense
+            où chacun de vos choix aura un impact direct sur l'histoire et le
+            monde qui vous entoure.
+          </p>
         </div>
-        
-        <div class="specs-box">
-            <h3>Configuration minimale</h3>
-            <ul>
-                <li><strong>OS:</strong> Windows 10</li>
-                <li><strong>Processeur:</strong> Intel Core i5-3570K or AMD FX-8310</li>
-                <li><strong>Mémoire:</strong> 8 GB RAM</li>
-                <li><strong>Carte Graphique:</strong> NVIDIA GeForce GTX 780 or AMD Radeon RX 470</li>
-                <li><strong>Stockage:</strong> 70 GB available space</li>
-            </ul>
-        </div>
-    </section>
 
-</main>
+        <div class="specs-box">
+          <h3>Configuration minimale</h3>
+          <ul>
+            <li><strong>OS:</strong> Windows 10</li>
+            <li>
+              <strong>Processeur:</strong> Intel Core i5-3570K or AMD FX-8310
+            </li>
+            <li><strong>Mémoire:</strong> 8 GB RAM</li>
+            <li>
+              <strong>Carte Graphique:</strong> NVIDIA GeForce GTX 780 or AMD
+              Radeon RX 470
+            </li>
+            <li><strong>Stockage:</strong> 70 GB available space</li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-content container">
         <div class="footer-social">
